@@ -1,11 +1,14 @@
-import React, {Component} from 'react';
-class  SearchForm extends Component{
-    render() {
-        return (
-            <form >
-<input type="text" placeholder="Search..."/>
-            </form>
-        )
-    }
-}
+import { useState } from "react";
+import React, {Component}  from 'react';
+
+
+function SearchForm() {
+    const [] = useState(0);
+    return   (
+        <form >
+<input type="text" placeholder="Search here" onChange={}/>
+        </form>
+    );
+};
+
 export default SearchForm;
