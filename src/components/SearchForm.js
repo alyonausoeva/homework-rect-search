@@ -1,11 +1,20 @@
 import React, { useState } from "react";
 
-var SearchForm = () => {
-  const [] = useState(0);
+const SearchForm = () => {
+  const [value, setValue] = useState("");
+
+  const handleChange = (e) => {
+    setValue(e.target.value);
+  };
 
   return (
     <form>
-      <input type="text" placeholder="Search here" onChange={} />
+      <input
+        type="text"
+        placeholder="Search here"
+        value={value}
+        onChange={handleChange}
+      />
     </form>
   );
 };
